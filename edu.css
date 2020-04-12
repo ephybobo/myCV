@@ -1,0 +1,44 @@
+/* style.css */
+body
+{
+    background-image: url("img/tembok.jpg");
+}
+
+#container
+{  
+    border-color    : white;
+    box-shadow      : 0 0 20px dodgerblue;
+    border-radius   : 50px;
+    width           : 80%;
+    height          : 200px;
+    margin-top      : 50px;
+    margin-bottom   : 40px;
+    margin-left     : 130px;
+    padding-top     : 10px;
+    padding-left    : 30px;
+}
+
+img
+{   
+    margin-top      : -110px;
+    border-color    : white;
+    box-shadow      : 0 0 30px dodgerblue;
+    width           : 250px;
+    height          : 150px;
+}
+
+h1
+{
+    font-family     : 'Fredoka One', cursive;
+    color           : whitesmoke;
+    text-align      : right;
+    margin-right    : 40px;
+}
+
+h2
+{
+    font-family     : 'Fredoka One', cursive;
+    color           : whitesmoke;
+    text-align      : right;
+    margin-right    : 40px;
+}

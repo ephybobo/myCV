@@ -1,0 +1,243 @@
+/* style.css */
+body
+{
+    background-image: url("img/tembok.jpg");
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+/* Logo */
+#logo
+{
+    position        : absolute;
+    text-align      : right;
+    right           : 30px;
+    bottom          : 30px;
+}
+
+
+/* Jam Digital */
+#jam
+{
+    margin-right    : 80px;
+    font-size       : 20px;
+    font-family     : 'Yeon Sung', cursive;
+    color           :whitesmoke;
+    text-align      : right;
+}
+
+/* Kalender */
+#kalender
+{
+    margin-top      : -45px;
+    margin-left     : 50px;
+    font-size       : 20px;
+    font-family     : 'Yeon Sung', cursive;
+    color           :whitesmoke;
+    text-align      : left;
+}
+
+/* Kontainer Setup */
+.rightside
+{ 
+    position        : relative;
+    margin-top      : 10px;
+    float           : right;
+    height          : 500px;
+    width           : 70%;
+    margin-right    : 50px;
+    border-radius   : 300px;
+
+}
+
+.leftside
+{ 
+    margin-top      : 30px;
+    float           : left;
+    height          : 600px;
+    width           : 25%;
+    border-radius   : 20px;
+}
+
+/* Flip Card */
+.thecard
+{
+    position        : relative;
+    width           : 100%;
+    height          : 100%;
+    border-radius   : 10px;
+    transform-style : preserve-3d;
+    transition      : all 0.8s ease;
+}
+  
+.thecard:hover
+{
+    transform       : rotateY(180deg);
+}
+  
+.thefront
+{
+    position        : absolute;
+    width           : 100%;
+    height          : 100%;
+    border-radius   : 10px;
+    backface-visibility: hidden;
+    overflow        : hidden;
+  
+  }
+  
+.theback
+{
+    position        : absolute;
+    width           : 100%;
+    height          : 100%;
+    border-radius   : 10px;
+    backface-visibility: hidden;
+    overflow        : hidden;
+    transform       : rotateY(180deg);
+}
+
+/* Menu Ikon Setup */
+#box
+{
+    width           : 100px;
+    height          : 100px;
+    margin-top      : 70px;
+    margin-bottom   : 40px;
+    margin-left     : 20px;
+    margin-right    : 75px;
+    padding-top     : 10px;
+    padding-left    : 25px;
+    padding-right   : 10px;
+    padding-bottom  : 20px;
+    border-radius   : 30px;
+    border-color    : black;
+    box-shadow      : 0 0 20px dodgerblue;
+    float           :right;
+}
+
+#about, #edu, #achieve, #org
+{
+    width           : 60px; 
+    height          : 60px;
+    margin-top      : 5px;
+    margin-left     : -10px;
+}
+
+#menu
+{
+    text-align      : center;
+    font-weight     : bold;
+    font-family     : 'Yeon Sung', cursive;
+    color           : whitesmoke;
+    margin-top      : -15px;
+    margin-left     : -15px;
+    font-size       : 20px;
+}
+
+/* Cover Depan */
+#welcome
+{   
+    position        : relative;
+    text-align      : center;
+    color           : deepskyblue;
+    font-size       : 70px;
+    font-family     : 'Yeon Sung', cursive;
+    --interval      : 1s;
+    display         : block;
+    text-shadow     : 
+      0 0 10px blue,
+      0 0 20px whitesmoke,
+      0 0 40px slategray,
+      0 0 80px grey;
+    will-change     : filter, color;
+    filter          : saturate(60%);
+    animation       : flicker steps(100) var(--interval) 1s infinite;
+}
+
+@keyframes flicker 
+{
+    50% 
+    {
+      color         : deepskyblue;
+      filter        : saturate(500%) hue-rotate(20deg);
+    }
+  }
+  
+/* Foto Aku */
+#me
+{
+    position        : relative;          
+    width           : 300px; 
+    height          : 600px;
+    float           : left;
+    margin-left     : 20px;
+}
+
+/* Copy Right Aku */
+#credit
+{
+    position        : absolute;
+    width           : 97%;
+    bottom          : 30px;
+    color           : whitesmoke;
+    text-align      : right;
+    font-weight     : bold;
+    font-family     : 'Yeon Sung', cursive;
+
+  } 
+
+/* Responsive */
+@media screen and (max-width: 480px) 
+{
+    .leftside, #box, #welcome, #kalender
+    {
+        width       : auto;
+        float       : none;
+        font-size   : 30px;
+    }
+    .rightside 
+    {
+        width           : auto;
+        height          : auto;
+        float           : none;
+        border-radius   : 20px;
+    }
+    #logo, #credit
+    {
+        position        : relative;
+        width           : auto;
+        height          : auto;
+        float           : none;
+    }
+}
+
+@media screen and (max-width: 720px) 
+{
+    .leftside, #box, #welcome, #kalender
+    {
+        width       : auto;
+        float       : none;
+        font-size   : 30px;
+    }
+    .rightside 
+    {
+        width           : auto;
+        height          : auto;
+        float           : none;
+        border-radius   : 20px;
+    }
+    #me, #logo
+    {
+        display         : none;
+    }
+    #credit
+    {
+        position    : relative;
+        text-align  : center;
+    }
+}
+ 
