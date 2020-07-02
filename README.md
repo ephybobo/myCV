@@ -5,5 +5,5 @@ Pemograman Dasar Web ini merupakan tugas submition dari dicoding academy yang me
 Pada web ini hanya terdiri dari HTML 5 dan CSS murni saja, karena goal dari kelas ini adalah membuat web sederhana hanya dengan HTML + CSS.
 
 <br/>
-![image](https://raw.githubusercontent.com/ephybobo/myCV/master/myCV.png)
-<img src="myCV.png" height="400" alt="Screenshot"/>
+<h1> Screenshot tampilan website </h1>
+<img src="myCV.png" height="500" alt="Screenshot"/>
