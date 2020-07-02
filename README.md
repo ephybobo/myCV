@@ -6,3 +6,4 @@ Pada web ini hanya terdiri dari HTML 5 dan CSS murni saja, karena goal dari kela
 
 <br/>
 ![image](https://raw.githubusercontent.com/ephybobo/myCV/master/myCV.png)
+<img src="myCV.png" height="400" alt="Screenshot"/>
